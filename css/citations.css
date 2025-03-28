@@ -1,0 +1,146 @@
+/* Citation styles for UCLA 3D Osteology Collection */
+
+.bibliography-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: var(--spacing-lg);
+}
+
+.bibliography-list li {
+    margin-bottom: var(--spacing-md);
+    padding-left: 2em;
+    text-indent: -2em;
+    line-height: 1.5;
+}
+
+.citation-box {
+    background-color: var(--light-bg);
+    border-left: 4px solid var(--primary-color);
+    padding: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    border-radius: var(--border-radius);
+}
+
+.citation-title {
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.citation-content {
+    font-family: var(--body-font);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.citation-copy-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.citation-copy-btn:hover {
+    background-color: var(--accent-color);
+}
+
+.reference-category {
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: var(--spacing-xs);
+}
+
+.doi-link {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.doi-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Citation modal styles */
+.citation-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.citation-modal-content {
+    background-color: var(--white);
+    margin: 15% auto;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    width: 80%;
+    max-width: 600px;
+    box-shadow: var(--box-shadow);
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--dark-gray);
+}
+
+.close-modal:hover {
+    color: var(--primary-color);
+}
+
+.copy-citation-btn {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    margin-top: var(--spacing-sm);
+    transition: background-color 0.3s ease;
+}
+
+.copy-citation-btn:hover {
+    background-color: var(--accent-color);
+}
+
+/* Citation format selector */
+.citation-format-selector {
+    margin-bottom: var(--spacing-md);
+}
+
+.format-btn {
+    background-color: var(--light-gray);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-right: 0.5rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.format-btn.active {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.citation-format {
+    display: none;
+}
+
+.citation-format.active {
+    display: block;
+}
